@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        mReverseArray.setText(Arrays.toString(a));
     }
 
     private void removedDuplicateNumber(Integer[] a, int n) {
@@ -114,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        mRemovedDuplicate.setText(Arrays.toString(a));
     }
 
     private void minimumNumber(Integer[] a, int n) {
@@ -122,6 +124,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+        mMinimumNumber.setText(Arrays.toString(a));
     }
 
     private void maxNumber(Integer[] a, int n) {
@@ -129,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        mMaximumNumber.setText(Arrays.toString(a));
     }
 
     private void sortTheArray(Integer[] a, int n) {
@@ -136,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        mSortedArray.setText(Arrays.toString(a));
 
     }
 
