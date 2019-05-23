@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AndroidSlidingUpPanel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Backup/3_20_2019/Rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Backup/3_20_2019/Rideox/rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Backup/Rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Backup/Rideox/rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Compressor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CurrentCenterPositionMap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CustomProgressBarAndProgressDialog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ImagePicker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rideox/rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rideox2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Rideox2/rideox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/StarIT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-samples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cw-omnibus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/driverApp/rideoxdrive" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/enc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fctv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/moviez" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rideoxdrive" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/uber_tutorial/Uber36" vcs="Git" />
+  </component>
+</project>

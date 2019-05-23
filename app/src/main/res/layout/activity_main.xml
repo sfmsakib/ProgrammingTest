@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_below="@id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input your array"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Input your array"/>
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="ADD"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/inputted_array"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 1,4,9,9,12,98,104"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" />
+
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+
+    </LinearLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ll_input"
+       >
+       <LinearLayout
+           android:id="@+id/ll_output"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tv_output"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/et_input"
+               android:text="OUTPUT"
+               android:textColor="#000"
+               android:layout_marginTop="30dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="5dp" >
+               <TextView
+                   android:id="@+id/tv_sorted_array"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Sorted Array"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp" />
+               <TextView
+                   android:id="@+id/tv_sorted_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="e.g. 1,4,9,9,12,98,104"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginEnd="20dp" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="5dp" >
+               <TextView
+                   android:id="@+id/tv_max_number"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Maximum Number"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp" />
+               <TextView
+                   android:id="@+id/tv_max_number_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="e.g. 104"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginEnd="20dp" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="5dp" >
+               <TextView
+                   android:id="@+id/tv_min_number"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Minimum Number"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp" />
+               <TextView
+                   android:id="@+id/tv_min_number_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="e.g. 1"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginEnd="20dp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="5dp" >
+               <TextView
+                   android:id="@+id/tv_duplicate_number"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Duplicate Number"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp" />
+               <TextView
+                   android:id="@+id/tv_duplicate_number_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="e.g. 9"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginEnd="20dp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="5dp" >
+               <TextView
+                   android:id="@+id/tv_duplicate_number_remove"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Removed Duplicate Number"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp" />
+               <TextView
+                   android:id="@+id/tv_duplicate_number_remove_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="e.g. 1,4,9,12,98,104"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginEnd="20dp" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="5dp"
+               android:layout_marginEnd="5dp" >
+               <TextView
+                   android:id="@+id/tv_reverse_array"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Reverse Array"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="20dp" />
+               <TextView
+                   android:id="@+id/tv_reverse_array_result"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="e.g. 9,12,4,104,9,1,98"
+                   android:textColor="#000"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginEnd="20dp" />
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
+
+</RelativeLayout>
